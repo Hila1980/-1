@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>תרגילים במתמטיקה</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>תרגילים לתרגול</h1>
+    </header>
+    <section>
+        <h2>תרגיל 1: חיבור מספרים</h2>
+        <p>מהו סכום 123 ו-456?</p>
+        <input type="text" id="answer1" placeholder="הקלד תשובה">
+        <button onclick="checkAnswer1()">בדוק תשובה</button>
+        <p id="result1"></p>
+
+        <h2>תרגיל 2: כפל מספרים</h2>
+        <p>מהו מכפלת 8 ב-7?</p>
+        <input type="text" id="answer2" placeholder="הקלד תשובה">
+        <button onclick="checkAnswer2()">בדוק תשובה</button>
+        <p id="result2"></p>
+    </section>
+    <script>
+        function checkAnswer1() {
+            var answer = document.getElementById('answer1').value;
+            if (answer == 579) {
+                document.getElementById('result1').innerText = "נכון!";
+            } else {
+                document.getElementById('result1').innerText = "לא נכון, נסה שוב.";
+            }
+        }
+
+        function checkAnswer2() {
+            var answer = document.getElementById('answer2').value;
+            if (answer == 56) {
+                document.getElementById('result2').innerText = "נכון!";
+            } else {
+                document.getElementById('result2').innerText = "לא נכון, נסה שוב.";
+            }
+        }
+    </script>
+    <footer>
+        <p>חזרה ל<a href="index.html">דף הבית</a></p>
+    </footer>
+</body>
+</html>
